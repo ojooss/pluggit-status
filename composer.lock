@@ -1,0 +1,103 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4b679812999a545ad45551668b53a087",
+    "packages": [
+        {
+            "name": "mightypork/phpmodbus",
+            "version": "0.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MightyPork/phpmodbus.git",
+                "reference": "fd2ae72b7975331ed4a5b0d09b984f923954add5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MightyPork/phpmodbus/zipball/fd2ae72b7975331ed4a5b0d09b984f923954add5",
+                "reference": "fd2ae72b7975331ed4a5b0d09b984f923954add5",
+                "shasum": ""
+            },
+            "require": {
+                "ext-sockets": "*",
+                "php": "^5.3.2 || ^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPModbus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Honza Krakora",
+                    "email": "krakora.jan@googlemail.com"
+                },
+                {
+                    "name": "Ondřej Hruška",
+                    "email": "ondra@ondrovo.com"
+                }
+            ],
+            "description": "PhpModbus with namespaces and updated to PHP 7",
+            "keywords": [
+                "modbus",
+                "phpmodbus"
+            ],
+            "time": "2017-09-02T12:35:28+00:00"
+        },
+        {
+            "name": "ojooss/pluggit-api",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ojooss/pluggit-api.git",
+                "reference": "1388259784a121c0c0e8fef8ffe6195a0bd03244"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ojooss/pluggit-api/zipball/1388259784a121c0c0e8fef8ffe6195a0bd03244",
+                "reference": "1388259784a121c0c0e8fef8ffe6195a0bd03244",
+                "shasum": ""
+            },
+            "require": {
+                "mightypork/phpmodbus": "*",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PluggitApi\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GNU-GPL"
+            ],
+            "description": "package to interact with pluggit ventilation unit",
+            "keywords": [
+                "modbus",
+                "pluggit",
+                "pluggit-api"
+            ],
+            "time": "2020-09-03T08:22:57+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
