@@ -20,4 +20,5 @@ ADD . /var/www/html
 RUN composer install
 
 
+EXPOSE 80
 CMD ["apache2-foreground"]
