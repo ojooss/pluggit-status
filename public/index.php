@@ -41,7 +41,7 @@ $scale = isset($_GET['scale'])?$_GET['scale']:1.0;
                 text-decoration: none;
             }
             #container {
-                background-image: url('background<?php  echo ($ventilationUnit->getBypassState()==1?'_bypass':''); ?>.png');
+                background-image: url('background<?php  echo ($ventilationUnit->getBypassState()==255?'_bypass':''); ?>.png');
                 width: 1150px;
                 height: 854px;
                 top: 0;
@@ -55,7 +55,7 @@ $scale = isset($_GET['scale'])?$_GET['scale']:1.0;
             #info {
                 font-size: 0.9em;
                 width: 465px;
-                top: 180px;
+                top: 195px;
                 left: 80px;
                 position: absolute;
             }
@@ -130,10 +130,11 @@ $scale = isset($_GET['scale'])?$_GET['scale']:1.0;
 
         <div id="info">
             <div>
-                <b>Verbleibende Filterzeit:</b> <?php echo $ventilationUnit->getFilterRemainingTime(true); ?><br />
-                <b>Modus:</b> <?php echo $ventilationUnit->getCurrentBLState(true).' ('.($ventilationUnit->getWeekProgram(true)+1).')'; ?>
+                <b>Uhrzeit:</b> <?php echo $ventilationUnit->getCurrentDateTime(true); ?><br />
+                <b>Modus:</b> <?php echo $ventilationUnit->getCurrentBLState(true).' ('.($ventilationUnit->getWeekProgram(true)+1).')'; ?><br />
+                <b>Filterzeit:</b> <?php echo $ventilationUnit->getFilterRemainingTime(true); ?><br />
             </div>
-            <div><h2 style="margin-bottom: 5px">Beipass</h2></div>
+            <div><h2 style="margin-bottom: 5px">Beipass <span style="font-size: 0.8em; font-weight: normal;">(<?php echo $ventilationUnit->getBypassState(true); ?>)</span></h2></div>
             <div style="float: left; width: 50%;">
                 <b>öffnet wenn:</b><br />
                 <?php
