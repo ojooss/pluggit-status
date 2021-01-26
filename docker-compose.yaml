@@ -6,3 +6,4 @@ services:
     build:
       context: .
     image: pluggit-status:latest
+    restart: always
